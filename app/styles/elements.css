@@ -110,13 +110,13 @@ Image credits: unsplash.com
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url('../images/agency/01.jpg');
+  background-image: url('/images/agency/01.jpg');
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url('../images/agency/02.jpg');
+  background-image: url('/images/agency/02.jpg');
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url('../images/agency/03.jpg');
+  background-image: url('/images/agency/03.jpg');
 }
 
 /********************************/
@@ -278,7 +278,7 @@ Licensed under MIT
 .navbar-brand {
   width: 70px;
   height: 50px;
-  background: url('../images/shared/logo.svg') no-repeat center center;
+  background: url('/images/shared/logo.svg') no-repeat center center;
   background-size: 50px;
 }
 

@@ -1,0 +1,61 @@
+<!-- PROJECT DETAILS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section class="project-nav">
+  <div class="container-fluid">
+    <div class="row">
+      {% if page.previous and page.next == null %}
+      <article class="col-md-6 project-nav-block  silver-bg text-center">
+        <a href="{{ page.previous.url }}">
+          <span class="ion-ios-arrow-thin-left black"></span>
+          <h4 class="font5 black">Prev Project</h4>
+        </a>
+      </article>
+
+      <article class="col-md-6 project-nav-block  black-bg text-center">
+        <a href="/work.html">
+          <span class="ion-grid white"></span>
+          <h4 class="font5 white">All Projects</h4>
+        </a>
+      </article>
+
+      {% elsif page.next and page.previous == null %}
+      <article class="col-md-6 project-nav-block  black-bg text-center">
+        <a href="/work.html">
+          <span class="ion-grid white"></span>
+          <h4 class="font5 white">All Projects</h4>
+        </a>
+      </article>
+
+      <article class="col-md-6 project-nav-block  color-bg text-center">
+        <a href="{{ page.next.url }}">
+          <span class="ion-ios-arrow-thin-right black"></span>
+          <h4 class="font5 black">Next Project</h4>
+        </a>
+      </article>
+
+      {% else %}
+      <article class="col-md-3 project-nav-block  silver-bg text-center">
+        <a href="{{ page.previous.url }}">
+          <span class="ion-ios-arrow-thin-left black"></span>
+          <h4 class="font5 black">Prev Project</h4>
+        </a>
+      </article>
+
+      <article class="col-md-3 project-nav-block  color-bg text-center">
+        <a href="{{ page.next.url }}">
+          <span class="ion-ios-arrow-thin-right black"></span>
+          <h4 class="font5 black">Next Project</h4>
+        </a>
+      </article>
+
+      <article class="col-md-6 project-nav-block  black-bg text-center">
+        <a href="/work.html">
+          <span class="ion-grid white"></span>
+          <h4 class="font5 white">All Projects</h4>
+        </a>
+      </article>
+      {% endif %}
+    </div>
+  </div>
+
+</section>

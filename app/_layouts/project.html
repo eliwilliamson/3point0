@@ -1,0 +1,30 @@
+---
+totalProjects: 15
+---
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+  {% include shared/head.html %}
+
+  <body class="{{ page.body_class }}">
+
+    {% include shared/header.html %}
+
+    <!-- MASTER CONTENT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <section class="mastwrap">
+      {% include projects/title.html %}
+      {% include shared/featured-image.html %}
+      {{ content }} <!-- images and abstracts -->
+      {% include projects/project-details.html %}
+      {% include projects/project-nav.html %}
+    </section>
+    <!-- end : mastwrap -->
+
+    {% include shared/footer.html %}
+
+    {% include shared/scripts.html %}
+    {% include shared/google-analytics.html %}
+  </body>
+</html>

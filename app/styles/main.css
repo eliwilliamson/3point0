@@ -102,6 +102,14 @@ header.masthead .masthead-half-left{
      -o-transition: all .8s linear;
       transition: all .8s linear;
 }
+header.masthead .masthead-half-left img{
+  height: 50px;
+  -webkit-transition: all .8s linear;
+     -moz-transition: all .8s linear;
+    -ms-transition: all .8s linear;
+     -o-transition: all .8s linear;
+      transition: all .8s linear;
+}
 header.masthead .masthead-half-right{
   height: 120px;
   padding-right: 40px;
@@ -121,6 +129,14 @@ header.masthead .masthead-half-right{
 }
 .header-highlighted .masthead-half-left{
   height: 60px !important;
+  -webkit-transition: all .8s linear;
+     -moz-transition: all .8s linear;
+    -ms-transition: all .8s linear;
+     -o-transition: all .8s linear;
+      transition: all .8s linear;
+}
+.header-highlighted .masthead-half-left img{
+  height: 30px !important;
   -webkit-transition: all .8s linear;
      -moz-transition: all .8s linear;
     -ms-transition: all .8s linear;
@@ -293,6 +309,8 @@ nav.mastnav{
 .emblem-logo{
   margin-bottom: 20px;
   opacity: 1;
+  height: 120px;
+  width: 120px;
   -webkit-transition: all .8s linear;
      -moz-transition: all .8s linear;
     -ms-transition: all .8s linear;
@@ -499,7 +517,7 @@ section.mastwrap{
                     transition: all .4s ease-in-out;
         }
         .info a:hover{
-            cursor: url("../images/plus.png") 40 40, crosshair;
+            cursor: url("/images/shared/plus.png") 40 40, crosshair;
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
                 -ms-transition: all .4s ease-in-out;
@@ -507,7 +525,7 @@ section.mastwrap{
                     transition: all .4s ease-in-out;
         }
         .zoom a:hover{
-            cursor: url("../images/zoom.png") 40 40, crosshair;
+            cursor: url("/images/shared/zoom.png") 40 40, crosshair;
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
                 -ms-transition: all .4s ease-in-out;
