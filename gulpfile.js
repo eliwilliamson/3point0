@@ -1,21 +1,21 @@
 'use strict';
-// Generated on 2015-07-29 using generator-playbook 2.0.1
 
 var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
     browserSync = require('browser-sync'),
     runSequence = require('run-sequence'),
-    del = require('del'),
-    neat = require('node-neat').includePaths;
+    less = require('gulp-less'),
+    path = require('path'),
+    del = require('del');
 
 var production = false,
     paths = {
       app:     'app',
       html:    'app/**/*.html',
-      styles:  'app/styles/**/*.scss',
+      styles:  'app/styles/**/*.{scss,less,css,sass}',
       scripts: 'app/scripts/**/*.js',
       images:  'app/images/**/*.{png,gif,jpg,jpeg,svg}',
-      fonts:   'app/fonts/**/*.{eot*,otf,svg,ttf,woff}',
+      fonts:   'app/fonts/**/*.{eot*,otf,svg,ttf,woff,css}',
       vendor:  'vendor'
     };
 
@@ -36,8 +36,10 @@ gulp.task('styles', function () {
   return gulp.src(paths.styles)
     .pipe($.sass({
       style: 'nested',
-      includePaths: [paths.styles].concat(neat),
       onError: console.error.bind(console, 'Sass error:')
+    }))
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
     .pipe($.autoprefixer('last 2 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest('.tmp/styles'))
@@ -46,8 +48,6 @@ gulp.task('styles', function () {
 
 gulp.task('scripts', function () {
   return gulp.src(paths.scripts)
-    .pipe($.jshint('.jshintrc'))
-    .pipe($.jshint.reporter('default'))
     .pipe(gulp.dest('.tmp/scripts'))
     .pipe(browserSync.reload({ stream: true }));
 });

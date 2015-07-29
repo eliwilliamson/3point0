@@ -1,9 +1,8 @@
 # 3point0
 
-A Playbook project.
+---
 
 ## Project Setup
-This project utilizes Playbook, reference Playbook's [setup guide](https://github.com/centresource/generator-playbook#get-started).
 
 1. Clone this repository
 2. `npm install`
@@ -20,4 +19,4 @@ Serve your source locally into your browser. BrowserSync automatically loads any
 Build the concatenated, minified production version of your source into the `dist` directory.
 
 ##### gulp deploy
-Deploy the production version of your source to [GitHub Pages](http://pages.github.com/).
+Deploy the production version of your source to [GitHub Pages](http://eliwilliamson.github.io/3point0/).
