@@ -122,3 +122,17 @@ input:focus, textarea:focus {
 	border-color:@color !important;
 	color:@color !important;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 0;
+}
+.email-link {
+  padding-bottom: 1px;
+  border-bottom: 1px dotted @dark;
+
+  &:hover {
+    border-color: @color;
+  }
+}

@@ -1,0 +1,67 @@
+---
+layout: default
+body_class: 'contact'
+---
+
+<!--  CONTACT FORM
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section class="agency">
+  <div class="container-fluid">
+    <div class="row">
+      <article class="col-md-6 text-left contact-tile black-bg">
+        <div class="contact-item">
+          <div class="alert alert-error error color-bg" id="fname">
+            <p class="black">Name must not be empty</p>
+          </div>
+          <div class="alert alert-error  error color-bg" id="fmail">
+            <p class="black">Please provide a valid email</p>
+          </div>
+          <div class="alert alert-error  error color-bg" id="fmsg">
+            <p class="black">Message should not be empty</p>
+          </div>
+          <form name="myform" id="contactForm" action="http://formspree.io/eliwilliamson@gmail.com" enctype="multipart/form-data" method="post">
+            <article>
+              <input type="text" placeholder="Your Name" id="name" name="name" size="100" class="border-form white font4light">
+            </article>
+            <article>
+              <input type="text" placeholder="Valid email ID" name="email" id="email" size="30" class="border-form white font4light">
+            </article>
+            <article>
+              <textarea placeholder="Your Message" name="message" cols="40" rows="5" id="msg" class="border-form white font4light"></textarea>
+              <div class="btn-wrap  text-left">
+                <button class="btn btn-ego btn-ego-white" id="submit" name="submit" type="submit">Send Message</button>
+              </div>
+            </article>
+          </form>
+        </div>
+      </article>
+      <article class="col-md-6 text-left contact-tile white-bg">
+        <h4 class="font4bold black">Want to talk to a human?<span class="font5 dark"></span></h4>
+        <div class="liner color-bg"></div>
+        <h6 class="font4light dark">send a personal email<br/>to <a class="email-link font4bold" href="mailto:eliwilliamson@gmail.com">eli</a> instead.</h6>
+        <ul class="foot-social add-top-quarter">
+          <li><a href="https://dribbble.com/eliwilliamson"><img data-no-retina alt="dribbble" title="dribbble" src="/images/shared/social/02.svg"/></a></li>
+          <li><a href="https://twitter.com/eliwilliamson"><img data-no-retina alt="twitter" title="twitter" src="/images/shared/social/01.svg"/></a></li>
+          <li><a href="https://www.facebook.com/elitricity"><img data-no-retina alt="facebook" title="facebook" src="/images/shared/social/03.svg"/></a></li>
+        </ul>
+      </article>
+    </div>
+    <div class="row">
+    </div>
+  </div>
+
+
+  <!--  MAP
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- <div class="container-fluid">
+    <div class="row">
+      <article class="col-md-12 map-wrap no-pad">
+        <div id="map" class="fullheight"></div>
+      </article>
+    </div>
+  </div> -->
+
+  {% include shared/full-width-image.html image="test-1.jpg" %}
+
+</section>

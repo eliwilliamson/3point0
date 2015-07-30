@@ -18,5 +18,10 @@
 
     {% include shared/scripts.html %}
     {% include shared/google-analytics.html %}
+
+    {% if page.body_class == "contact" %}
+      {% include shared/contact-scripts.html %}
+    {% endif %}
+
   </body>
 </html>
