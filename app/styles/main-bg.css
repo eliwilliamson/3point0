@@ -2,8 +2,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
 Note: The best way to replace any BG image is to add image URL in url('....') area of related classname.
-If you need assistance, please go to http://www.designova.net/downloads.html and request a downloadable 
-ZIP pack contains original live preview version with all preview images linked properly, so you can easily 
+If you need assistance, please go to http://www.designova.net/downloads.html and request a downloadable
+ZIP pack contains original live preview version with all preview images linked properly, so you can easily
 replace preview images directly;
 */
 
@@ -24,50 +24,50 @@ replace preview images directly;
     background-image: url('../images/featured/05.jpg');
 }
 .about-01-bg{
-    background-image: url('../images/bg/09.jpg');
+    background-image: url('/images/about/09.jpg');
 }
 .about-02-bg{
-    background-image: url('../images/bg/02.jpg');
+    background-image: url('/images/about/02.jpg');
 }
 .about-03-bg{
-    background-image: url('../images/bg/06.jpg');
+    background-image: url('/images/about/06.jpg');
 }
 .agency-tile-02{
-    background-image: url('../images/agency/01.jpg');
+    background-image: url('/images/about/01.jpg');
 }
 .agency-tile-03{
-    background-image: url('../images/agency/02.jpg');
+    background-image: url('/images/about/02.jpg');
 }
 .agency-tile-07{
-    background-image: url('../images/agency/03.jpg');
+    background-image: url('/images/about/03.jpg');
 }
 .agency-tile-08{
-    background-image: url('../images/agency/04.jpg');
+    background-image: url('/images/about/04.jpg');
 }
 .features-item-01-bg{
-    background-image: url('../images/agency/01.jpg');
+    background-image: url('/images/about/01.jpg');
 }
 .features-item-02-bg{
-    background-image: url('../images/agency/02.jpg');
+    background-image: url('/images/about/02.jpg');
 }
 .features-item-03-bg{
-    background-image: url('../images/agency/03.jpg');
+    background-image: url('/images/about/03.jpg');
 }
 .features-item-04-bg{
-    background-image: url('../images/agency/04.jpg');
+    background-image: url('/images/about/04.jpg');
 }
 .call-to-action-01{
-    background-image: url('../images/bg/07.jpg');
+    background-image: url('/images/about/07.jpg');
 }
 .call-to-action-02{
-    background-image: url('../images/bg/08.jpg');
+    background-image: url('/images/about/08.jpg');
 }
 .news-bg{
-    background-image: url('../images/bg/10.jpg');
+    background-image: url('/images/about/10.jpg');
 }
 .pricing-bg{
-    background-image: url('../images/bg/09.jpg');
+    background-image: url('/images/about/09.jpg');
 }
 .contact-bg{
-    background-image: url('../images/bg/04.jpg');
+    background-image: url('/images/about/04.jpg');
 }
