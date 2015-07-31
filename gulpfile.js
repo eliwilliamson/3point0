@@ -93,6 +93,7 @@ gulp.task('replace', ['optimize'], function () {
   return gulp.src('dist/**/*.html')
     .pipe($.replace(/("|'?)\/?styles\//g,  ghPages + '/styles/'))
     .pipe($.replace(/("|'?)\/?scripts\//g, ghPages + '/scripts/'))
+    .pipe($.replace(/("|'?)\/?images\//g, ghPages + '/images/'))
     .pipe(gulp.dest('dist'));
 });
 
