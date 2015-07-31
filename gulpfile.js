@@ -94,6 +94,7 @@ gulp.task('replace', ['optimize'], function () {
     .pipe($.replace(/("|'?)\/?styles\//g,  ghPages + '/styles/'))
     .pipe($.replace(/("|'?)\/?scripts\//g, ghPages + '/scripts/'))
     .pipe($.replace(/("|'?)\/?images\//g, ghPages + '/images/'))
+    .pipe($.replace(/("|'?)\/?fonts\//g, ghPages + '/fonts/'))
     .pipe(gulp.dest('dist'));
 });
 
