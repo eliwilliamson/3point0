@@ -5,7 +5,11 @@
     position: relative;
 
     .col-md-12 {
-      height: 35em;
+      height: 40em;
+
+      @include below($small) {
+        height: 35em;
+      }
     }
 
     .headline {
