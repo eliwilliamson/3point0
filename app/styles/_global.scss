@@ -17,7 +17,7 @@ a:hover {
 // Loader
 
 #status {
-    width: 200px;
+    width: 300px;
     height: 200px;
     position: fixed;
     left: 50%;
@@ -25,8 +25,8 @@ a:hover {
     background-image: url('/images/shared/loader.gif');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 150px 150px;
-    margin: -100px 0 0 -100px;
+    background-size: contain;
+    margin: -100px 0 0 -150px;
 }
 
 // Breakpoints

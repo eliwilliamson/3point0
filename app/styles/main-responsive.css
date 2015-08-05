@@ -182,9 +182,12 @@ there.
         text-align: center;
     }
     section.mastwrap{
-      border: 50px solid;
+      border: 0 solid;
       border-top: 120px solid;
       border-bottom: 0;
+    }
+    header.masthead{
+        padding: 0;
     }
 
 }

@@ -9,7 +9,7 @@ body{
 }
 /* ------- overlay: change here background color and opacity ----- */
 .vbox-overlay{
-    background: rgba(255,255,255,1); 
+    background: rgba(255,255,255,1);
     width: 100%;
     height: auto;
     position: absolute;
@@ -33,14 +33,14 @@ body{
 
 /* circle preloader */
 .vbox-preloader{
-    position:fixed; 
-    width:32px; 
+    position:fixed;
+    width:32px;
     height:32px;
-    left:50%; 
-    top:50%; 
-    margin-left:-16px; 
+    left:50%;
+    top:50%;
+    margin-left:-16px;
     margin-top:-16px;
-    background-image: url(../images/venobox/preload-circle.png);
+    background-image: url(/images/shared/venobox/preload-circle.png);
     text-indent: -100px;
     overflow: hidden;
     -webkit-animation: playload 1.4s steps(18) infinite;
@@ -72,14 +72,14 @@ body{
 /* IOS preloader */
 /*
 .vbox-preloader{
-    position:fixed; 
-    width:32px; 
+    position:fixed;
+    width:32px;
     height:32px;
-    left:50%; 
-    top:50%; 
-    margin-left:-16px; 
+    left:50%;
+    top:50%;
+    margin-left:-16px;
     margin-top:-16px;
-    background-image: url(../images/venobox/preload-ios.png);
+    background-image: url(/images/shared/venobox/preload-ios.png);
     text-indent: -100px;
     overflow: hidden;
     -webkit-animation: playload 1.4s steps(12) infinite;
@@ -113,14 +113,14 @@ body{
 /* dots preloader */
 /*
 .vbox-preloader{
-    position:fixed; 
-    width:32px; 
+    position:fixed;
+    width:32px;
     height:11px;
-    left:50%; 
-    top:50%; 
-    margin-left:-16px; 
+    left:50%;
+    top:50%;
+    margin-left:-16px;
     margin-top:-16px;
-    background-image: url(../images/venobox/preload-dots.png);
+    background-image: url(/images/shared/venobox/preload-dots.png);
     text-indent: -100px;
     overflow: hidden;
     -webkit-animation: playload 1.4s steps(24) infinite;
@@ -154,14 +154,14 @@ body{
 /* quads preloader */
 /*
 .vbox-preloader{
-    position:fixed; 
-    width:32px; 
+    position:fixed;
+    width:32px;
     height:10px;
-    left:50%; 
-    top:50%; 
-    margin-left:-16px; 
+    left:50%;
+    top:50%;
+    margin-left:-16px;
     margin-top:-16px;
-    background-image: url(../images/venobox/preload-quads.png);
+    background-image: url(/images/shared/venobox/preload-quads.png);
     text-indent: -100px;
     overflow: hidden;
     -webkit-animation: playload 1.4s steps(12) infinite;
@@ -201,7 +201,7 @@ body{
     height: 40px;
     padding: 10px 20px 10px 0;
     display: block;
-    background: url(../images/venobox/close.gif) no-repeat #eee;
+    background: url(/images/shared/venobox/close.gif) no-repeat #eee;
     background-position:10px center;
     color: #fff;
     text-indent: -100px;
@@ -220,11 +220,11 @@ body{
 }
 .vbox-prev{
     left: 10px;
-    background: url(../images/venobox/prev.gif) center center no-repeat;
+    background: url(/images/shared/venobox/prev.gif) center center no-repeat;
 }
 .vbox-next{
     right: 10px;
-    background: url(../images/venobox/next.gif) center center no-repeat;
+    background: url(/images/shared/venobox/next.gif) center center no-repeat;
 }
 
 .vbox-title{

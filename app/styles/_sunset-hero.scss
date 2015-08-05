@@ -57,6 +57,9 @@
       font-style: italic;
       font-size: .7em;
 
+      @include below($medium) {
+        font-size: .65em;
+      }
       @include below($small) {
         font-size: .55em;
       }
@@ -69,6 +72,9 @@
       letter-spacing: .5em;
       margin: .2em -.3em .2em .2em;
 
+      @include below($medium) {
+        font-size: 1.5em;
+      }
       @include below($small) {
         font-size: 1em;
         margin: .7em -.3em .2em .2em;
