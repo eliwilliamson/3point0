@@ -24,7 +24,7 @@ replace preview images directly;
     background-image: url('../images/featured/05.jpg');
 }
 .about-01-bg{
-    background-image: url('/images/about/09.jpg');
+    background-image: url('/images/about/about-hero.jpg');
 }
 .about-02-bg{
     background-image: url('/images/about/02.jpg');
@@ -57,7 +57,14 @@ replace preview images directly;
     background-image: url('/images/about/04.jpg');
 }
 .call-to-action-01{
-    background-image: url('/images/about/07.jpg');
+  background: rgb(255,66,125); /* Old browsers */
+  background: -moz-linear-gradient(45deg,  rgba(255,66,125,1) 0%, rgba(255,118,96,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(255,66,125,1)), color-stop(100%,rgba(255,118,96,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(45deg,  rgba(255,66,125,1) 0%,rgba(255,118,96,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(45deg,  rgba(255,66,125,1) 0%,rgba(255,118,96,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(45deg,  rgba(255,66,125,1) 0%,rgba(255,118,96,1) 100%); /* IE10+ */
+  background: linear-gradient(45deg,  rgba(255,66,125,1) 0%,rgba(255,118,96,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff427d', endColorstr='#ff7660',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 .call-to-action-02{
     background-image: url('/images/about/08.jpg');
