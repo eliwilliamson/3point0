@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'et-line';
-	src:url('..http://eliwilliamson.github.io/3point0/fonts/et-line/et-line.eot');
-	src:url('..http://eliwilliamson.github.io/3point0/fonts/et-line/et-line.eot?#iefix') format('embedded-opentype'),
-		url('..http://eliwilliamson.github.io/3point0/fonts/et-line/et-line.woff') format('woff'),
-		url('..http://eliwilliamson.github.io/3point0/fonts/et-line/et-line.ttf') format('truetype'),
-		url('..http://eliwilliamson.github.io/3point0/fonts/et-line/et-line.svg#et-line') format('svg');
+	src:url('http://eliwilliamson.github.io/3point0/fonts/et-line/et-line.eot');
+	src:url('http://eliwilliamson.github.io/3point0/fonts/et-line/et-line.eot?#iefix') format('embedded-opentype'),
+		url('http://eliwilliamson.github.io/3point0/fonts/et-line/et-line.woff') format('woff'),
+		url('http://eliwilliamson.github.io/3point0/fonts/et-line/et-line.ttf') format('truetype'),
+		url('http://eliwilliamson.github.io/3point0/fonts/et-line/et-line.svg#et-line') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
