@@ -15,7 +15,7 @@ var production = false,
       styles:  'app/styles/**/*.{scss,less,css,sass}',
       scripts: 'app/scripts/**/*.js',
       images:  'app/images/**/*.{png,gif,jpg,jpeg,svg}',
-      fonts:   'app/fonts/**/*.{eot*,otf,svg,ttf,woff,css}',
+      fonts:   'app/fonts/**/*.{eot*,otf,svg,ttf,woff,woff2,css}',
       vendor:  'vendor'
     };
 
