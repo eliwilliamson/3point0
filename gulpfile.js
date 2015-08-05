@@ -4,7 +4,6 @@ var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
     browserSync = require('browser-sync'),
     runSequence = require('run-sequence'),
-    less = require('gulp-less'),
     path = require('path'),
     del = require('del');
 
@@ -12,7 +11,7 @@ var production = false,
     paths = {
       app:     'app',
       html:    'app/**/*.{html,md}',
-      styles:  'app/styles/**/*.{scss,less,css,sass}',
+      styles:  'app/styles/**/*.{scss,css,sass}',
       scripts: 'app/scripts/**/*.js',
       images:  'app/images/**/*.{png,gif,jpg,jpeg,svg}',
       fonts:   'app/fonts/**/*.{eot*,otf,svg,ttf,woff,woff2,css}',
@@ -37,9 +36,6 @@ gulp.task('styles', function () {
     .pipe($.sass({
       style: 'nested',
       onError: console.error.bind(console, 'Sass error:')
-    }))
-    .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
     .pipe($.autoprefixer('last 2 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest('.tmp/styles'))
@@ -76,12 +72,12 @@ gulp.task('optimize', ['html', 'styles', 'scripts', 'images', 'fonts'], function
 
   return gulp.src('dist/**/*.html')
     .pipe(assets)
-    .pipe($.if('*.css', $.minifyCss()))
-    .pipe($.if('*.js', $.uglify()))
-    .pipe($.rev())
+    // .pipe($.if('*.css', $.minifyCss()))
+    // .pipe($.if('*.js', $.uglify()))
+    // .pipe($.rev())
     .pipe(assets.restore())
-    .pipe($.useref())
-    .pipe($.revReplace())
+    // .pipe($.useref())
+    // .pipe($.revReplace())
     .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'));
 });
