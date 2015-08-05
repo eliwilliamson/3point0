@@ -14,6 +14,21 @@ a:hover {
   }
 }
 
+// Loader
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-image: url('/images/shared/loader.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 150px;
+    margin: -100px 0 0 -100px;
+}
+
 // Breakpoints
 
 $small:   480px;
