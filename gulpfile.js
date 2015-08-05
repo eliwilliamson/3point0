@@ -90,7 +90,7 @@ gulp.task('optimize', ['html', 'styles', 'scripts', 'images', 'fonts'], function
 gulp.task('replace', ['optimize'], function () {
   var ghPages = '$1http://eliwilliamson.github.io/3point0';
 
-  return gulp.src('dist/**/*.html')
+  return gulp.src('dist/**/*.{html,css}')
     .pipe($.replace(/("|'?)\/?styles\//g,  ghPages + '/styles/'))
     .pipe($.replace(/("|'?)\/?scripts\//g, ghPages + '/scripts/'))
     .pipe($.replace(/("|'?)\/?images\//g, ghPages + '/images/'))
