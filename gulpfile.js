@@ -95,6 +95,7 @@ gulp.task('replace', ['optimize'], function () {
     .pipe($.replace(/("|'?)\/?scripts\//g, ghPages + '/scripts/'))
     .pipe($.replace(/("|'?)\/?images\//g, ghPages + '/images/'))
     .pipe($.replace(/("|'?)\/?fonts\//g, ghPages + '/fonts/'))
+    .pipe($.replace(/(<a[^>]*href=")(\/)/g, ghPages + '/'))
     .pipe(gulp.dest('dist'));
 });
 
