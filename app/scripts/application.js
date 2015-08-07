@@ -22,7 +22,7 @@ $(function() {
 
 (function() {
 
-  if (document.getElementById("cta-band")) {
+  if (document.getElementById("particles")) {
     var Particle;
 
     window.requestAnimationFrame || (window.requestAnimationFrame = window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback, element) {
@@ -81,13 +81,15 @@ $(function() {
       clock = 0;
       xOffset = 100;
       yOffset = 100;
+      divHeight = document.getElementById("particles").clientHeight;
       particles = [];
       run = function() {
         var height, i, width, _i;
         elm = document.createElement('canvas');
         this.pixelDensity = pixelDensity = window.devicePixelRatio || 1;
         this.width = width = window.innerWidth * this.pixelDensity;
-        this.height = height = 439 * this.pixelDensity;
+        console.log(divHeight);
+        this.height = height = divHeight * this.pixelDensity;
         elm.style.width = width / this.pixelDensity + "px";
         elm.style.height = height / this.pixelDensity + "px";
         xOffset = width * pixelDensity / 2;
@@ -95,7 +97,7 @@ $(function() {
         elm.setAttribute('height', height);
         ctx = elm.getContext('2d');
         ctx.lineWidth = 1;
-        document.getElementById("cta-band").appendChild(elm);
+        document.getElementById("particles").appendChild(elm);
         for (i = _i = 0; _i <= 100; i = ++_i) {
           particles.push(new Particle);
         }
