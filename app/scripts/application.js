@@ -88,7 +88,6 @@ $(function() {
         elm = document.createElement('canvas');
         this.pixelDensity = pixelDensity = window.devicePixelRatio || 1;
         this.width = width = window.innerWidth * this.pixelDensity;
-        console.log(divHeight);
         this.height = height = divHeight * this.pixelDensity;
         elm.style.width = width / this.pixelDensity + "px";
         elm.style.height = height / this.pixelDensity + "px";

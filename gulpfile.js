@@ -4,14 +4,14 @@ var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
     browserSync = require('browser-sync'),
     runSequence = require('run-sequence'),
-    path = require('path'),
+    less = require('gulp-less'),
     del = require('del');
 
 var production = false,
     paths = {
       app:     'app',
       html:    'app/**/*.{html,md}',
-      styles:  'app/styles/**/*.{scss,css,sass}',
+      styles:  'app/styles/**/*.{scss,less,css,sass}',
       scripts: 'app/scripts/**/*.js',
       images:  'app/images/**/*.{png,gif,jpg,jpeg,svg}',
       fonts:   'app/fonts/**/*.{eot*,otf,svg,ttf,woff,woff2,css}',
@@ -37,6 +37,7 @@ gulp.task('styles', function () {
       style: 'nested',
       onError: console.error.bind(console, 'Sass error:')
     }))
+    .pipe(less())
     .pipe($.autoprefixer('last 2 version', 'safari 5', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest('.tmp/styles'))
     .pipe(browserSync.reload({ stream: true }));
