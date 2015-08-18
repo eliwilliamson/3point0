@@ -15,7 +15,8 @@ var production = false,
       scripts: 'app/scripts/**/*.js',
       images:  'app/images/**/*.{png,gif,jpg,jpeg,svg}',
       fonts:   'app/fonts/**/*.{eot*,otf,svg,ttf,woff,woff2,css}',
-      vendor:  'vendor'
+      vendor:  'vendor',
+      cname:   'app/CNAME'
     };
 
 gulp.task('html', function (cb) {
@@ -83,16 +84,21 @@ gulp.task('optimize', ['html', 'styles', 'scripts', 'images', 'fonts'], function
     .pipe(gulp.dest('dist'));
 });
 
-// Update absolute asset paths for GitHub Pages subdirectory
-gulp.task('replace', ['optimize'], function () {
-  var ghPages = '$1http://eliwilliamson.github.io/3point0';
+// Update absolute asset paths for production
+gulp.task('replace', ['optimize', 'cname'], function () {
+  var prodURL = '$1http://justdusk.com';
 
   return gulp.src('dist/**/*.{html,css}')
-    .pipe($.replace(/("|'?)\/?styles\//g,  ghPages + '/styles/'))
-    .pipe($.replace(/("|'?)\/?scripts\//g, ghPages + '/scripts/'))
-    .pipe($.replace(/("|'?)\/?images\//g, ghPages + '/images/'))
-    .pipe($.replace(/("|'?)\/?fonts\//g, ghPages + '/fonts/'))
-    .pipe($.replace(/(<a[^>]*href=")(\/)/g, ghPages + '/'))
+    .pipe($.replace(/("|'?)\/?styles\//g,  prodURL + '/styles/'))
+    .pipe($.replace(/("|'?)\/?scripts\//g, prodURL + '/scripts/'))
+    .pipe($.replace(/("|'?)\/?images\//g, prodURL + '/images/'))
+    .pipe($.replace(/("|'?)\/?fonts\//g, prodURL + '/fonts/'))
+    .pipe($.replace(/(<a[^>]*href=")(\/)/g, prodURL + '/'))
+    .pipe(gulp.dest('dist'));
+});
+
+gulp.task('cname', function () {
+  return gulp.src(paths.fonts)
     .pipe(gulp.dest('dist'));
 });
 
@@ -104,7 +110,7 @@ gulp.task('build', ['replace'], function () {
     }));
 });
 
-gulp.task('gh-pages', function () {
+gulp.task('production-prep', function () {
   return gulp.src('dist/**/*')
     .pipe($.ghPages())
 });
@@ -136,7 +142,7 @@ gulp.task('serve', function () {
 
 gulp.task('deploy', function () {
   production = true;
-  runSequence('clean', 'build', 'gh-pages');
+  runSequence('clean', 'build', 'production-prep');
 });
 
 gulp.task('default', function () {
