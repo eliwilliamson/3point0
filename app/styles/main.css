@@ -72,8 +72,6 @@ header.masthead{
   left: 0;
   width: 100%;
   z-index: 9999;
-  padding-left: 80px;
-  padding-right: 80px;
   -webkit-transition: all .8s linear;
      -moz-transition: all .8s linear;
     -ms-transition: all .8s linear;
@@ -337,7 +335,6 @@ nav.mastnav{
 /* 5. Pages
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 section.mastwrap{
-  border: 80px solid;
   border-top: 120px solid;
   border-bottom: 0;
 }
@@ -471,7 +468,7 @@ section.mastwrap{
 }
 .works-container{
     padding: 0;
-  margin: 70px auto 0 auto;
+  margin: 70px 0;
   overflow: hidden;
 }
 .works-filter li:last-child:after{

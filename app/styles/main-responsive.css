@@ -60,18 +60,11 @@ there.
         display: inline-block;
     }
     section.mastwrap{
-      border: 60px solid;
       border-top: 120px solid;
       border-bottom: 0;
     }
     .cd-panel-container{
     	width: 70%;
-    }
-    header.masthead{
-        padding: 0px 50px;
-    }
-    .header-highlighted{
-        padding: 0px 50px !important;
     }
     .masthead .text-left{
     	text-align: left !important;
