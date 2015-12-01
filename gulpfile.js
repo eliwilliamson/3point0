@@ -98,7 +98,7 @@ gulp.task('replace', ['optimize', 'cname'], function () {
 });
 
 gulp.task('cname', function () {
-  return gulp.src(paths.fonts)
+  return gulp.src(paths.cname)
     .pipe(gulp.dest('dist'));
 });
 
