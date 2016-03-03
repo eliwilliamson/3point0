@@ -2,7 +2,7 @@
 layout: project
 client: "The Home Depot"
 title: "The Home Depot Decison Support Tools"
-sequence: "05"
+sequence: "04"
 featuredImageFile: "home-depot-featured.png"
 quote: "WD conducted a technology assessment, and were able to develop a new digital-integration plan that aligned its dot.com, mobile, and brick-and-mortar strategies, which increased conversion in key departments. (WD Partners)"
 ---
