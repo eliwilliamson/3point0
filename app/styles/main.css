@@ -501,7 +501,6 @@ section.mastwrap{
                     transition: all .4s ease-in-out;
         }
         .info a:hover{
-            cursor: url("/images/shared/plus.png") 40 40, crosshair;
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
                 -ms-transition: all .4s ease-in-out;
@@ -509,7 +508,6 @@ section.mastwrap{
                     transition: all .4s ease-in-out;
         }
         .zoom a:hover{
-            cursor: url("/images/shared/zoom.png") 40 40, crosshair;
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
                 -ms-transition: all .4s ease-in-out;
@@ -970,6 +968,9 @@ section.mastwrap{
 }
 
 /*PROJECT*/
+.project-nav{
+  cursor: pointer;
+}
 .project-nav-block{
   padding: 80px 40px;
 }
