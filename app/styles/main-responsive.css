@@ -7,7 +7,12 @@ on small devices, paste the mobile query code up in the buttons section and styl
 there.
 */
 
-
+/* Larger than Desktop HD */
+@media (min-width: 1500px) {
+    .img-responsive {
+        width: 100%;
+    }
+}
 
 /* Larger than Desktop HD */
 @media (max-width: 1360px) {
@@ -46,9 +51,16 @@ there.
     }
 }
 
+/* Larger than desktop */
+@media (min-width: 992px) {
+    .news-post-head {
+        padding-left: 25px;
+    }
+}
+
 
 /* Larger than desktop */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .container {
         max-width: 500px;
     }
