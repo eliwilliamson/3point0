@@ -3,3 +3,7 @@
 @import 'fonts';
 @import 'global';
 @import 'sunset-hero';
+
+.cmmc-thumb a {
+  height: calc(100% - 4.7%);
+}
