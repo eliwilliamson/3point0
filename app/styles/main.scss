@@ -58,9 +58,15 @@ div#preloader {
     z-index: 99999;
 }
 
+body.work div#preloader {
+  top: 80px !important;
+}
+
 div#preloader.fluidview {
     left: 0px;
 }
+
+
 
 
 /* 2. Header

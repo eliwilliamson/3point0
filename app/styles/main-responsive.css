@@ -184,7 +184,7 @@ there.
       margin-top: 60px;
     }
     .work-in-numbers {
-      zoom: .3;
+      display: none;
     }
     .news-post-head .add-bottom {
       margin-bottom: 60px;
@@ -234,6 +234,9 @@ there.
         width: 636px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+    .filter-notification {
+      display: none !important;
     }
 }
 

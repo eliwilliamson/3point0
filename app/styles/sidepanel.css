@@ -133,7 +133,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
  /* padding: 70px 5%;*/
   overflow: auto;
   /* smooth scrolling on touch devices */
@@ -254,7 +254,7 @@
     visibility: visible;
     opacity: 1;
 }
-  
+
     .standard-nav-active{
         visibility: hidden;
     }
