@@ -973,6 +973,19 @@ section.mastwrap{
 }
 .project-nav-block{
   padding: 80px 40px;
+  @media (max-width: 991px) {
+    padding: 20px 10px;
+    display: block;
+
+    &.half-small {
+      width: 50%;
+      display: inline-block;
+
+      &:nth-child(2) {
+        float: right;
+      }
+    }
+  }
 }
 .project-nav-block h4{
   font-style: italic;

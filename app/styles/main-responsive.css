@@ -176,6 +176,28 @@ there.
     .standard-nav-active{
         visibility: visible;
     }
+    .about-03 {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .news-post-head .add-top {
+      margin-top: 60px;
+    }
+    .work-in-numbers {
+      zoom: .3;
+    }
+    .news-post-head .add-bottom {
+      margin-bottom: 60px;
+    }
+    .services-02 {
+      padding-top: 60px;
+      margin-bottom: -60px;
+    }
+    .services-02 .add-bottom-half,
+    .services-02 .add-top-half {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
 }
 
 /* Larger than tablet */
