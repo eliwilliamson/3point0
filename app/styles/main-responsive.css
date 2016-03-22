@@ -183,7 +183,7 @@ there.
     .news-post-head .add-top {
       margin-top: 60px;
     }
-    .work-in-numbers {
+    .hide-on-mobile {
       display: none;
     }
     .news-post-head .add-bottom {
